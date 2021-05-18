@@ -28,7 +28,7 @@
         </nav>
         <div class="addbtn">
             <button id="add" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
-                Add
+                <i class="fas fa-shopping-cart"></i>
             </button>
 
             <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -77,27 +77,7 @@
                     <h6>Stock: XX</h6>
                 </div>
                 <div class="bott">
-                    <button id="leftb" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#stockModal">
-                        Stock
-                    </button>
-        
-                    <div class="modal fade" id="stockModal" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">[Sample Name]</h5>
-                                </div>
-                                <div class="modal-body" id="stock-body">
-                                    <label>Total Stock</label>
-                                    <input type="number" min="0" value="0" id="stock-input">
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary">Upload</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button id="rightb">Delete</button>
+                    <button id="addToCart"><i class="fas fa-plus"></i></button>
                 </div>
             </div>
         </div>
