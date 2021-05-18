@@ -25,20 +25,8 @@ body{
     opacity: 50%;
 }
 
-#search-icon{
-    border-radius: 0px 5px 5px 0px !important;
-}
-  
-.btn {
-    width: 3em;
-    border: 1px solid #d1d6dc !important;
-    border-left: 0px solid !important;
-    border-radius: 0px !important;
-    background-color: #ffffff !important;
-}
-
-.form-control{
-    width: 20em;
+#logo{
+    width: 17em;
 }
 
 .content-nav{
@@ -96,9 +84,20 @@ body{
     filter: blur(0.1em);
 }
 
-.pickbtn{
-    display: flex;
-    padding: 0.3em 3em;
+.addbtn{
+    float: right;
+    margin: 0.9em 5em;
+}
+
+#add{
+    padding: 0.7em 3em;
+    outline: none;
+    background-color: rgba(0, 27, 125);
+}
+
+#add:hover{
+    background-color: #F0F0F0;
+    color: rgba(0, 27, 125);
 }
 
 .right{
@@ -149,24 +148,18 @@ input[type=radio]:checked + label {
     padding: 1em;
     background-color: #FFFFFF;
     width: 20.2vw;
-    height: 25.5vh;
+    height: 38vh;
 }
 
 .top{
+    text-align: center;
     padding-bottom: 1em;
-    display: flex;
     align-items: center;
 }
 
-.top label{
-    padding-left: 0.7em;
-    font-size: 1.1em;
-}
-
 .user img{
-    border-radius: 70px;
-    width: 5em;
-    height: 5em;
+    width: 12em;
+    height: 7em;
 }
 
 .bott{
@@ -183,11 +176,11 @@ input[type=radio]:checked + label {
 }
 
 #leftb{
-    background-color: #7FFFE0;
+    background-color: rgba(0, 27, 125);
 }
 
 #leftb:hover{
-    background-color: #72e6c9;
+    background-color: rgb(2, 49, 219);
 }
 
 #rightb{
@@ -196,4 +189,43 @@ input[type=radio]:checked + label {
 
 #rightb:hover{
     background-color: #d80404;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 27, 125);
+    color: white;
+}
+
+#stock-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+#stock-input, .input-box{
+    border: none;
+    border-bottom: 1px solid rgba(0, 27, 125);
+    outline: none;
+    width: 13em;
+}
+
+#stock-input:hover{
+    border-bottom: 1px solid rgb(79, 92, 138);
+}
+
+.addInput, .addInput-pic{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5em;
+    font-weight: bold;
+}
+
+.input-price{
+    border: none;
+    outline: none;
+}
+
+.harga{
+    border-bottom: 1px solid rgba(0, 27, 125);
 }
