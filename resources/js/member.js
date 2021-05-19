@@ -13,4 +13,4 @@ else if(hour >= 18){
     greet = "Good Evening";
 }
 
-document.getElementById("greetings").innerHTML = greet + ", Dear admin"
+document.getElementById("greetings").innerHTML = greet + ", Dear member"
