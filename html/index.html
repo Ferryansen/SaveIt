@@ -27,7 +27,7 @@
             </div>
         </nav>
         <div class="addbtn">
-            <a href="#">
+            <a href="../html/cart.html">
                 <button id="add" type="button" class="btn btn-primary">
                     <i class="fas fa-shopping-cart"></i>
                 </button>
@@ -36,12 +36,36 @@
         <div class="content">
             <div class="user">
                 <div class="top">
-                    <a href="#"><img src="https://foto.wartaekonomi.co.id/files/arsip_foto_2020_08_28/danone-aqua_140327_big.jpg" alt=""></a>
+                    <img src="https://foto.wartaekonomi.co.id/files/arsip_foto_2020_08_28/danone-aqua_140327_big.jpg" alt="">
                     <div class="labelProduct">[Sample Product]</div>
                     <h6>Price: XX</h6>
                 </div>
                 <div class="bott">
-                    <button id="addToCart"><i class="fas fa-plus"></i></button>
+                    <button id="addToCart" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#stockModal">
+                        <i class="fas fa-plus"></i>
+                    </button>
+        
+                    <div class="modal fade" id="stockModal" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">[Sample Product]</h5>
+                                </div>
+                                <div id="body-top">
+                                    <h6>Category: [Product Category]</h6>
+                                    <h6>Price: Rp[Product Price]</h6>
+                                    <h6>Stock available: [Stock]</h6>
+                                </div>
+                                <div class="modal-body" id="stock-body">
+                                    <label>Quantity</label>
+                                    <input type="number" min="0" value="0" id="stock-input">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Upload</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
