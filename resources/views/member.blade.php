@@ -70,6 +70,6 @@
             </div>
         </div>
     </section>
-    <script src="../js/member.js"></script>
+    <script src="/js/member.js"></script>
 </body>
 </html>
